@@ -1,0 +1,59 @@
+
+.main {
+  height: 100vh;
+  width: 100vw;  
+  background:
+    linear-gradient(
+      to right, 
+      rgba(#000, 0.9),
+      rgba(#222,0.4)),
+      url("../img/model-1.jpg") center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  & .home__name{
+    font-size: 2.5rem;
+    padding-bottom:1rem;
+    margin: .5em 0;
+    border-bottom: 2px solid #fff;
+    &-last{
+      color: $secondary-clr;
+      font-weight: 700;
+    }
+  }
+  
+  .social-icons{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    bottom:0;
+    left: 0;
+    opacity: .5;
+    z-index: 2;
+
+    & a{
+      margin: .3em;
+
+      & i{
+        @include transition-ease()
+      }
+      & i:hover{
+        color: $secondary-clr;  
+      }
+    }
+  }
+  .footer{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
+    transform: rotate(90deg) translate(-4rem,-4rem);
+    color: $gray;
+  }
+}

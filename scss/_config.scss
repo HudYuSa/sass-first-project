@@ -1,0 +1,44 @@
+
+$default-clr:#fff;
+$gray:#aaa;
+$primary-clr:#272727;
+$secondary-clr: #ff652f;
+$tertiary-clr:rgb(51, 51, 51);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: $primary-clr;
+color: $default-clr;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1;
+}
+h1,h2,h3{
+  font-weight: 400;
+}
+
+a{
+  color: $default-clr;
+  text-decoration:none;
+}
+li{
+  list-style: none;
+}
+
+.text-secondary{
+  color: $secondary-clr;
+}
+
+@mixin transition-ease {
+transition: all .5s ease-in-out;   
+}
+@mixin absolute-width {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
